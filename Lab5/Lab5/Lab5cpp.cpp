@@ -23,10 +23,9 @@ void closeFiles(ifstream& file1, ofstream& file2, ofstream& file3) {
 	file2.close();
 	file1.close();
 	if (file1.is_open() || file2.is_open() || file3.is_open())
-		cout << "some file isn't closed" << endl << "ERROR";
+		cout << "some file isn't closed" << endl << "ERROR" << endl;
 	else
-		cout << "Programm finished";
-	
+		cout << "Programm finished" << endl;
 }
 
 void solution(string& StringForTheInput, ofstream& text_of_the_first_output, ofstream& text_of_the_second_output) {
