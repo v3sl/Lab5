@@ -32,10 +32,14 @@ void solution(string& StringForTheInput, ofstream& text_of_the_first_output, ofs
 	StringForTheInput.push_back('.');
 	vector<int>array_for_the_right_strings;
 	FindRightStrings(StringForTheInput, array_for_the_right_strings);
-	if (string_with_one_palindrome(array_for_the_right_strings))
+	if (string_with_one_palindrome(array_for_the_right_strings)) {
+		StringForTheInput.erase(StringForTheInput.size() - 1, 1);
 		text_of_the_first_output << StringForTheInput << '\n';
-	else
+	}
+	else {
+		StringForTheInput.erase(StringForTheInput.size() - 1, 1);
 		text_of_the_second_output << StringForTheInput << '\n';
+	}
 }
 
 int main() {
