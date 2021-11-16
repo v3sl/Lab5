@@ -42,10 +42,7 @@ int string_with_one_palindrome(const vector<int> arr3) {
         if (arr3[i] == 1)
             b++;
     }
-    if (b == 1)
-        return 1;
-    else
-        return 0;
+    return b;
 }
 
 void openFiles(ifstream& file1, ofstream& file2, ofstream& file3) {
